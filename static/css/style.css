@@ -1,0 +1,15 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: red;
+  }
+  form {
+    color: blue;
+  }
+
+.conntent {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}

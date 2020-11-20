@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div class = "conntent">
+        <h1> Wpisz swoją wagę i wzrost </h1>
+        <form action = "/" method="POST">
+            <p>Waga(kg)
+            <input type="number" name="weight"></p>
+            <p>Wzrost(cm)
+            <input type="number" name="height"></p>
+            <input type="submit" value="Send">
+        </form>
+        {%if bmi%}
+            <br>Waga = {{w}} kg <br>
+            Wzrost = {{h}} cm
+            <p>Twoje BMI jest równe = {{bmi}}</p>
+            <p>{{text}}</p>
+        {%else%}
+            <p>{{text}}</p>
+        {%endif%}
+    </div>
+</body>
+</html>
