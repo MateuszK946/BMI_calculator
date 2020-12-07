@@ -12,4 +12,6 @@ body {
     margin: auto;
     width: 60%;
     padding: 10px;
+    position: absolute;
+    text-align: center;
 }
